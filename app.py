@@ -1,6 +1,6 @@
 import os
-from flask import Flask, request, escape, Response
-
+from flask import Flask, request, Response
+from markupsafe import escape
 app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
